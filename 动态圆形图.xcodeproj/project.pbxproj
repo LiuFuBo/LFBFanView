@@ -15,7 +15,7 @@
 		68A377D01F289001000E8374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A377CE1F289001000E8374 /* LaunchScreen.storyboard */; };
 		68A377DB1F289001000E8374 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A377DA1F289001000E8374 /* _____Tests.m */; };
 		68A377E61F289001000E8374 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A377E51F289001000E8374 /* _____UITests.m */; };
-		68A377F51F2890B2000E8374 /* LFBFanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A377F41F2890B2000E8374 /* LFBFanView.m */; };
+		68E17C0D1F308888005AB57A /* LFBFanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E17C0C1F308888005AB57A /* LFBFanView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		68A377E11F289001000E8374 /* 动态圆形图UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "动态圆形图UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A377E51F289001000E8374 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		68A377E71F289001000E8374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68A377F31F2890B2000E8374 /* LFBFanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBFanView.h; sourceTree = "<group>"; };
-		68A377F41F2890B2000E8374 /* LFBFanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBFanView.m; sourceTree = "<group>"; };
+		68E17C0B1F308888005AB57A /* LFBFanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBFanView.h; sourceTree = "<group>"; };
+		68E17C0C1F308888005AB57A /* LFBFanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBFanView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,8 @@
 				68A377C41F289001000E8374 /* AppDelegate.m */,
 				68A377C61F289001000E8374 /* ViewController.h */,
 				68A377C71F289001000E8374 /* ViewController.m */,
-				68A377F31F2890B2000E8374 /* LFBFanView.h */,
-				68A377F41F2890B2000E8374 /* LFBFanView.m */,
+				68E17C0B1F308888005AB57A /* LFBFanView.h */,
+				68E17C0C1F308888005AB57A /* LFBFanView.m */,
 				68A377C91F289001000E8374 /* Main.storyboard */,
 				68A377CC1F289001000E8374 /* Assets.xcassets */,
 				68A377CE1F289001000E8374 /* LaunchScreen.storyboard */,
@@ -280,8 +280,8 @@
 			files = (
 				68A377C81F289001000E8374 /* ViewController.m in Sources */,
 				68A377C51F289001000E8374 /* AppDelegate.m in Sources */,
-				68A377F51F2890B2000E8374 /* LFBFanView.m in Sources */,
 				68A377C21F289001000E8374 /* main.m in Sources */,
+				68E17C0D1F308888005AB57A /* LFBFanView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
