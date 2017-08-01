@@ -64,7 +64,6 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         share = [LFBFanView new];
-        share.bounds = CGRectMake(0, 0, 205, 205);
     });
     return share;
 }

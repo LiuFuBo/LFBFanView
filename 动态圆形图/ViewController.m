@@ -31,9 +31,10 @@
 
     LFBFanView *fan = [LFBFanView shareInstance];
     fan.fanColors = [UIColor colorWithRed:243/255.0f green:125/255.0f blue:88/255.0f alpha:1];
+    fan.bounds = CGRectMake(0, 0, 205, 205);
     fan.center = self.view.center;
     fan.percent = 80;
-    fan.energyPercent = 50;
+    fan.energyPercent = 80;
     [self.view addSubview:fan];
 }
 
