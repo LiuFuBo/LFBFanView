@@ -15,7 +15,8 @@
 		68A377D01F289001000E8374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A377CE1F289001000E8374 /* LaunchScreen.storyboard */; };
 		68A377DB1F289001000E8374 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A377DA1F289001000E8374 /* _____Tests.m */; };
 		68A377E61F289001000E8374 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A377E51F289001000E8374 /* _____UITests.m */; };
-		68E17C0D1F308888005AB57A /* LFBFanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E17C0C1F308888005AB57A /* LFBFanView.m */; };
+		68E2FEE81F70FD1600B2F508 /* LFBFanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E2FEE61F70FD1600B2F508 /* LFBFanView.m */; };
+		68E2FEEB1F70FF9D00B2F508 /* LFBFanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E2FEEA1F70FF9D00B2F508 /* LFBFanModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +53,10 @@
 		68A377E11F289001000E8374 /* 动态圆形图UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "动态圆形图UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A377E51F289001000E8374 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		68A377E71F289001000E8374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68E17C0B1F308888005AB57A /* LFBFanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBFanView.h; sourceTree = "<group>"; };
-		68E17C0C1F308888005AB57A /* LFBFanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBFanView.m; sourceTree = "<group>"; };
+		68E2FEE51F70FD1600B2F508 /* LFBFanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBFanView.h; sourceTree = "<group>"; };
+		68E2FEE61F70FD1600B2F508 /* LFBFanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBFanView.m; sourceTree = "<group>"; };
+		68E2FEE91F70FF9D00B2F508 /* LFBFanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBFanModel.h; sourceTree = "<group>"; };
+		68E2FEEA1F70FF9D00B2F508 /* LFBFanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBFanModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +107,11 @@
 		68A377BF1F289001000E8374 /* 动态圆形图 */ = {
 			isa = PBXGroup;
 			children = (
+				68E2FEE21F70FD1600B2F508 /* LFBFanView */,
 				68A377C31F289001000E8374 /* AppDelegate.h */,
 				68A377C41F289001000E8374 /* AppDelegate.m */,
 				68A377C61F289001000E8374 /* ViewController.h */,
 				68A377C71F289001000E8374 /* ViewController.m */,
-				68E17C0B1F308888005AB57A /* LFBFanView.h */,
-				68E17C0C1F308888005AB57A /* LFBFanView.m */,
 				68A377C91F289001000E8374 /* Main.storyboard */,
 				68A377CC1F289001000E8374 /* Assets.xcassets */,
 				68A377CE1F289001000E8374 /* LaunchScreen.storyboard */,
@@ -143,6 +145,17 @@
 				68A377E71F289001000E8374 /* Info.plist */,
 			);
 			path = "动态圆形图UITests";
+			sourceTree = "<group>";
+		};
+		68E2FEE21F70FD1600B2F508 /* LFBFanView */ = {
+			isa = PBXGroup;
+			children = (
+				68E2FEE51F70FD1600B2F508 /* LFBFanView.h */,
+				68E2FEE61F70FD1600B2F508 /* LFBFanView.m */,
+				68E2FEE91F70FF9D00B2F508 /* LFBFanModel.h */,
+				68E2FEEA1F70FF9D00B2F508 /* LFBFanModel.m */,
+			);
+			path = LFBFanView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,8 +293,9 @@
 			files = (
 				68A377C81F289001000E8374 /* ViewController.m in Sources */,
 				68A377C51F289001000E8374 /* AppDelegate.m in Sources */,
+				68E2FEEB1F70FF9D00B2F508 /* LFBFanModel.m in Sources */,
+				68E2FEE81F70FD1600B2F508 /* LFBFanView.m in Sources */,
 				68A377C21F289001000E8374 /* main.m in Sources */,
-				68E17C0D1F308888005AB57A /* LFBFanView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

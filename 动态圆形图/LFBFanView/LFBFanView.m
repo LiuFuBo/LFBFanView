@@ -17,7 +17,6 @@
 
 /** 开始角度 */
 @property (nonatomic, assign) CGFloat startAngle;
-
 /** 结束角度 */
 @property (nonatomic, assign) CGFloat endAngle;
 /** 圆弧线宽 */
@@ -28,6 +27,18 @@
 @property (nonatomic, assign) CGFloat distance;
 /** 外部扇形的长度*/
 @property (nonatomic, assign) CGFloat fanHeight;
+/** 有效运动百分比 */
+@property (nonatomic, assign) CGFloat percent;
+/** 条数 */
+@property (nonatomic, assign) NSInteger barCount;
+/** 低层扇形条的颜色 */
+@property (nonatomic, strong) UIColor *normalColor;
+/** 高亮扇形条的颜色 */
+@property (nonatomic, strong) UIColor *hightlightColor;
+/** 整个视图背景颜色*/
+@property (nonatomic, strong) UIColor *fanColors;
+/** 电量所剩百分比 */
+@property (nonatomic, assign) CGFloat energyPercent;
 
 
 @end
@@ -59,13 +70,24 @@
     self.hightlightColor = [UIColor whiteColor];
 }
 
-+ (instancetype)shareInstance{
-    static LFBFanView *share = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        share = [LFBFanView new];
-    });
-    return share;
+
+- (void)bindDataWithModel:(LFBFanModel *)model{
+    
+    self.percent = model.percent;
+    if (model.barCount > 0) {
+        self.barCount = model.barCount;
+    }
+    if (model.normalColor) {
+        self.normalColor = model.normalColor;
+    }
+    if (model.hightlightColor) {
+        self.hightlightColor = model.hightlightColor;
+    }
+    if (model.fanColors) {
+        self.fanColors = model.fanColors;
+    }
+    self.energyPercent = model.energyPercent;
+    [self setNeedsDisplay];
 }
 
 - (void)setFanColors:(UIColor *)fanColors{

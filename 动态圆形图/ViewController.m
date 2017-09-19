@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LFBFanView.h"
+#import "LFBFanModel.h"
 
 @interface ViewController ()
 
@@ -29,12 +30,14 @@
 
 - (void)respondsToButton:(UIButton *)sender{
 
-    LFBFanView *fan = [LFBFanView shareInstance];
-    fan.fanColors = [UIColor colorWithRed:243/255.0f green:125/255.0f blue:88/255.0f alpha:1];
+    LFBFanModel *model = [LFBFanModel new];
+    model.fanColors =[UIColor colorWithRed:243/255.0f green:125/255.0f blue:88/255.0f alpha:1];
+    model.percent = 90;
+    model.energyPercent = 80;
+    LFBFanView *fan = [LFBFanView new];
     fan.bounds = CGRectMake(0, 0, 205, 205);
     fan.center = self.view.center;
-    fan.percent = 80;
-    fan.energyPercent = 80;
+    [fan bindDataWithModel:model];
     [self.view addSubview:fan];
 }
 

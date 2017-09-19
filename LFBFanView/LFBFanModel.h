@@ -1,15 +1,15 @@
 //
-//  SYFanView.h
+//  LFBFanModel.h
 //  动态圆形图
 //
-//  Created by branon_liu on 2017/7/26.
+//  Created by branon_liu on 2017/9/19.
 //  Copyright © 2017年 postop_iosdev. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface LFBFanView : UIView
-
+@interface LFBFanModel : NSObject
 
 /**
  有效运动百分比
@@ -40,9 +40,5 @@
  电量所剩百分比
  */
 @property (nonatomic, assign) CGFloat energyPercent;
-
-
-
-+ (instancetype)shareInstance;
 
 @end
